@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<form [formGroup]="saveDetails" (ngSubmit)="DisplayDetails()">
+  <input type="text" placeholder="Enter full name" formControlName="name">
+  <br><br>
+  <input type="text" placeholder="Enter Last Name" formControlName="lname">
+  <br><br>
+  <input type="email" placeholder="Enter Email ID" formControlName="mail">
+  <br><br>
+  <input type="password" placeholder="Enter the Password" formControlName="pwd">
+  <br><br>
+  <button>Save</button>
+</form>
